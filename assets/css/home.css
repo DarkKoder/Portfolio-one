@@ -1,0 +1,142 @@
+@import url(../css/clash-display.css);
+
+:root {
+    --c-dark: #212529;
+    --c-brand: #4e57d4;
+    --c-brand-light: #6970dd;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: #727272;
+    --font-base: "ClashDisplay", sans-serif;
+    --box-shadow: 0px 15px 25px rgb(0,0,0,0.08);
+    --transition: all 0.5s ease;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HERO SECTION */
+.main {
+    background-image: url(/assets/images/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: white;
+    height: 100vh;
+    position: relative;
+    font-family: var(--font-base);
+}
+
+.navbar {
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    width: 14%;
+    cursor: pointer;
+    /*margin-top: -3%;*/
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+/*
+ul {
+    margin-top: -4%;
+}
+*/
+
+ul li {
+    list-style: none;
+    display: inline-flex;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    /*margin-top: -3%;*/
+    transition: var(--transition);
+}
+
+ul li a.active {
+    color: rgb(59, 174, 209);
+}
+
+ul li a:hover:not(.active) {
+    color: rgb(230, 104, 59);
+}
+
+/* INFO */
+
+.info {
+    /*margin-left: 7%;
+    margin-top: 10%;*/
+    text-align: center;
+    align-items: center;
+    margin-top: 11%;
+}
+
+.info h1 {
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+}
+
+.info h3 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: white;
+}
+
+.info span {
+    color: rgb(230, 104, 59);
+}
+
+.info a {
+    text-decoration: none;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    margin: 30px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.info a:hover {
+    background-color: rgb(59, 174, 209);
+    color: white;
+}
+/*
+.image {
+    width: 25%;
+    height: 50%;
+    position: absolute;
+    right: 100px;
+    bottom: 15%;
+}
+
+.image img {
+    position: absolute;
+    height: 140%;
+    left: 40%;
+    transform: translate(-60%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.image:hover .boy {
+    left: 50%;
+}
+*/

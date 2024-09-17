@@ -27,6 +27,7 @@
     height: 100vh;
     position: relative;
     font-family: var(--font-base);
+    font-family: sans-serif;
 }
 
 .navbar {
@@ -80,16 +81,28 @@ ul li a:hover:not(.active) {
 /* INFO */
 
 .info {
-    /*margin-left: 7%;
-    margin-top: 10%;*/
-   text-align: center;
-    align-items: center;
-    margin-top: 10%;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+
+.info .about {
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.info > p {
+    font-size: 20px;
+}
+
+.info .about > p {
+    margin-left: -3%;
+    padding-top: 10PX;
 }
 
 .info h1 {
-    font-size: 90px;
+    font-size: 35px;
     color: rgb(255, 255, 255);
+   
 }
 
 .info h3 {
@@ -97,6 +110,11 @@ ul li a:hover:not(.active) {
     letter-spacing: 1px;
     line-height: 24px;
     color: white;
+}
+
+.info p {
+    color: white;
+    text-align: justify;
 }
 
 .info span {
@@ -117,6 +135,16 @@ ul li a:hover:not(.active) {
 .info a:hover {
     background-color: rgb(59, 174, 209);
     color: white;
+}
+
+.info .name {
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+.info .name > p {
+    margin-left: 50px;
+    margin-top: 5px;
 }
 /*
 .image {
